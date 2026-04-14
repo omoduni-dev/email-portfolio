@@ -116,12 +116,21 @@ body{
   .container{
     padding:10px;
   }
+  
+  #lightbox{
+  cursor:zoom-out;
+}
+
+.project-img{
+  cursor:zoom-in;
+}
 }
 </style>
 
 </head>
-
-<body>
+  
+  
+  <body>
 
 <!-- HEADER -->
 <div class="header">
@@ -139,10 +148,9 @@ body{
   <h3>📧 Financial Newsletter Template</h3>
 
   <div class="image-grid">
-    <img src="newsletter-desktop.png" class="project-img">
-    <img src="newsletter-mobile.png" class="project-img">
-    
-  </div>
+  <img src="newsletter-desktop.png" class="project-img" onclick="openLightbox(this.src)">
+  <img src="newsletter-mobile.png" class="project-img" onclick="openLightbox(this.src)">
+</div>
 
   <p>
     A responsive HTML email template designed for financial updates, featuring data tables, CTAs, and cross-client compatibility.
@@ -184,6 +192,44 @@ body{
 <div class="footer">
   © 2026 Omoduni Bolorunduro Mark
 </div>
+    
+    
+      <!-- LIGHTBOX -->
+<div id="lightbox" onclick="closeLightbox()" style="
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.8);
+  justify-content:center;
+  align-items:center;
+  z-index:999;
+">
+
+  <img id="lightbox-img" style="
+    max-width:90%;
+    max-height:90%;
+    border-radius:8px;
+  ">
+
+</div>
+    
+    <script>
+function openLightbox(src){
+  var box = document.getElementById("lightbox");
+  var img = document.getElementById("lightbox-img");
+
+  box.style.display = "flex";
+  img.src = src;
+}
+
+function closeLightbox(){
+  document.getElementById("lightbox").style.display = "none";
+}
+</script>
+  
 
 </body>
 </html>
