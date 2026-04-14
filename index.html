@@ -1,22 +1,123 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Email Portfolio</title>
+
+<style>
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:#f4f4f4;
+}
+
+/* HEADER */
+.header{
+  background:#002147;
+  color:#ffffff;
+  padding:30px;
+  text-align:center;
+}
+
+.header h1{
+  margin:0;
+  font-size:28px;
+}
+
+.header p{
+  margin-top:10px;
+  font-size:14px;
+}
+
+/* CONTAINER */
+.container{
+  max-width:900px;
+  margin:30px auto;
+  padding:20px;
+}
+
+/* PROJECT CARD */
+.card{
+  background:#ffffff;
+  padding:20px;
+  margin-bottom:20px;
+  border-radius:8px;
+  border:1px solid #ddd;
+}
+
+.card h3{
+  margin-top:0;
+}
+
+/* BUTTON */
+.button{
+  display:inline-block;
+  background:#002147;
+  color:#ffffff;
+  padding:10px 15px;
+  text-decoration:none;
+  margin-top:10px;
+}
+
+/* FOOTER */
+.footer{
+  text-align:center;
+  padding:20px;
+  font-size:12px;
+  color:#777;
+}
+
+/* MOBILE */
+@media screen and (max-width:600px){
+  .container{
+    padding:10px;
+  }
+}
+</style>
+
 </head>
 
-<body style="font-family:Arial; padding:40px;">
+<body>
 
-<h1>Omoduni Bolorunduro Mark</h1>
+<!-- HEADER -->
+<div class="header">
+  <h1>Omoduni Bolorunduro Mark</h1>
+  <p>HTML Email Developer | Responsive Email Templates | Email Marketing Specialist</p>
+</div>
 
-<p>
-HTML Email Developer | Responsive Email Templates | Email Marketing Specialist
-</p>
+<!-- MAIN CONTENT -->
+<div class="container">
 
-<h2>Projects</h2>
+  <h2>My Projects</h2>
 
-<ul>
-<li><a href="newsletter.html">Financial Newsletter Template</a></li>
-</ul>
+  <!-- PROJECT 1 -->
+  <div class="card">
+    <h3>📧 Financial Newsletter Template</h3>
+    <p>
+      A responsive HTML email template designed for financial updates, including data tables, CTAs, and cross-client compatibility.
+    </p>
+
+    <a href="newsletter.html" class="button">View Template</a>
+  </div>
+
+  <!-- FUTURE PROJECTS -->
+  <div class="card">
+    <h3>🛍️ Promotional Email (Coming Soon)</h3>
+    <p>High-converting promotional email for marketing campaigns.</p>
+  </div>
+
+  <div class="card">
+    <h3>👋 Welcome Email (Coming Soon)</h3>
+    <p>Clean onboarding email template for new users.</p>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  © 2026 Omoduni Bolorunduro Mark
+</div>
 
 </body>
 </html>
