@@ -16,13 +16,23 @@ body{
 .header{
   background:#002147;
   color:#ffffff;
-  padding:30px;
+  padding:40px 20px;
   text-align:center;
+}
+  
+  .image-grid{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
+.image-grid img{
+  width:48%;
 }
 
 .header h1{
   margin:0;
-  font-size:28px;
+  font-size:30px;
 }
 
 .header p{
@@ -37,7 +47,7 @@ body{
   padding:20px;
 }
 
-/* PROJECT CARD */
+/* CARD */
 .card{
   background:#ffffff;
   padding:20px;
@@ -49,15 +59,48 @@ body{
 .card h3{
   margin-top:0;
 }
+  
+  /* IMAGE STYLING */
+.project-img{
+  width:100%;
+  border-radius:8px;
+  transition:0.3s ease;
+}
+
+/* HOVER EFFECT */
+.project-img:hover{
+  transform:scale(1.02);
+}
 
 /* BUTTON */
 .button{
   display:inline-block;
   background:#002147;
   color:#ffffff;
-  padding:10px 15px;
+  padding:10px 18px;
   text-decoration:none;
   margin-top:10px;
+  border-radius:5px;
+  transition:0.3s ease;
+}
+
+.button:hover{
+  background:#001530;
+}
+
+/* CONTACT SECTION */
+.contact{
+  background:#002147;
+  color:#ffffff;
+  padding:30px;
+  text-align:center;
+  border-radius:8px;
+}
+
+.contact a{
+  color:#FFD700;
+  text-decoration:none;
+  font-weight:bold;
 }
 
 /* FOOTER */
@@ -86,22 +129,28 @@ body{
   <p>HTML Email Developer | Responsive Email Templates | Email Marketing Specialist</p>
 </div>
 
-<!-- MAIN CONTENT -->
+<!-- MAIN -->
 <div class="container">
 
   <h2>My Projects</h2>
 
-  <!-- PROJECT 1 -->
-  <div class="card">
-    <h3>📧 Financial Newsletter Template</h3>
-    <p>
-      A responsive HTML email template designed for financial updates, including data tables, CTAs, and cross-client compatibility.
-    </p>
+  <!-- PROJECT -->
+ <div class="card">
+  <h3>📧 Financial Newsletter Template</h3>
 
-    <a href="newsletter.html" class="button">View Template</a>
+  <div class="image-grid">
+    <img src="newsletter-desktop.png" class="project-img">
+    <img src="newsletter-mobile.png" class="project-img">
+    
   </div>
 
-  <!-- FUTURE PROJECTS -->
+  <p>
+    A responsive HTML email template designed for financial updates, featuring data tables, CTAs, and cross-client compatibility.
+  </p>
+
+  <a href="newsletter.html" class="button">View Template</a>
+</div>
+
   <div class="card">
     <h3>🛍️ Promotional Email (Coming Soon)</h3>
     <p>High-converting promotional email for marketing campaigns.</p>
@@ -110,6 +159,23 @@ body{
   <div class="card">
     <h3>👋 Welcome Email (Coming Soon)</h3>
     <p>Clean onboarding email template for new users.</p>
+  </div>
+
+  <!-- CONTACT SECTION -->
+  <div class="contact">
+    <h2>Let’s Work Together</h2>
+    <p>
+      I design responsive HTML email templates that work across all major email clients and drive engagement.
+    </p>
+
+    <p>
+      📧 <a href="mailto:bolorunduroomoduni@gmail.com">bolorunduroomoduni@gmail.com</a><br><br>
+      📞 <a href="tel:+2348102796552">+234 810 279 6552</a>
+    </p>
+
+    <p>
+      Available for freelance & remote opportunities
+    </p>
   </div>
 
 </div>
