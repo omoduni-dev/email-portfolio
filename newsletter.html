@@ -3,470 +3,187 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Email Portfolio</title>
 
 <style>
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:#f4f4f4;
+}
+
+/* HEADER */
+.header{
+  background:#002147;
+  color:#ffffff;
+  padding:40px 20px;
+  text-align:center;
+}
+  
+  .image-grid{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
+.image-grid img{
+  width:48%;
+}
+
+.header h1{
+  margin:0;
+  font-size:30px;
+}
+
+.header p{
+  margin-top:10px;
+  font-size:14px;
+}
+
+/* CONTAINER */
+.container{
+  max-width:900px;
+  margin:30px auto;
+  padding:20px;
+}
+
+/* CARD */
+.card{
+  background:#ffffff;
+  padding:20px;
+  margin-bottom:20px;
+  border-radius:8px;
+  border:1px solid #ddd;
+}
+
+.card h3{
+  margin-top:0;
+}
+  
+  /* IMAGE STYLING */
+.project-img{
+  width:100%;
+  border-radius:8px;
+  transition:0.3s ease;
+}
+
+/* HOVER EFFECT */
+.project-img:hover{
+  transform:scale(1.02);
+}
+
+/* BUTTON */
+.button{
+  display:inline-block;
+  background:#002147;
+  color:#ffffff;
+  padding:10px 18px;
+  text-decoration:none;
+  margin-top:10px;
+  border-radius:5px;
+  transition:0.3s ease;
+}
+
+.button:hover{
+  background:#001530;
+}
+
+/* CONTACT SECTION */
+.contact{
+  background:#002147;
+  color:#ffffff;
+  padding:30px;
+  text-align:center;
+  border-radius:8px;
+}
+
+.contact a{
+  color:#FFD700;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+/* FOOTER */
+.footer{
+  text-align:center;
+  padding:20px;
+  font-size:12px;
+  color:#777;
+}
+
+/* MOBILE */
 @media screen and (max-width:600px){
-  .container{width:100% !important;}
-  .padding{padding:15px !important;}
-  .fluid-img{width:100% !important; height:auto !important;}
-  .text-center{text-align:center !important;}
+  .container{
+    padding:10px;
+  }
 }
 </style>
 
 </head>
-<body style="margin:0; padding:0; background:#f4f4f4; font-family:Arial, sans-serif;">
-<table width="100%" cellpadding="0" cellspacing="0" role="presentation">
-  <tr>
-    <td align="center">
-		
-		<!-- Main Container -->
-      
-     <table width="600" class="container" cellpadding="0" cellspacing="0" role="presentation"
-style="background:#ffffff; border:3px solid #002147;">
-        
-		 
-		<!-- HEADER -->
-<tr>
-<td style="background:#002147; padding:15px 20px;" class="padding">
 
-<table width="100%" role="presentation">
-<tr>
+<body>
 
-<td style="color:#ffffff; font-size:20px; font-weight:bold;">
-FIRST REGISTRARS NEWSLETTER
-</td>
+<!-- HEADER -->
+<div class="header">
+  <h1>Omoduni Bolorunduro Mark</h1>
+  <p>HTML Email Developer | Responsive Email Templates | Email Marketing Specialist</p>
+</div>
 
-<td align="right">
-<img src="https://res.cloudinary.com/dc6kfrchh/image/upload/v1773498320/first_registrars_logo_mn7bsu.png"
-width="150" alt="Company Logo" style="display:block;">
-</td>
+<!-- MAIN -->
+<div class="container">
 
-</tr>
-</table>
+  <h2>My Projects</h2>
 
-</td>
-</tr>
-        
-        <!-- SECTION 1: Capital Market -->
-        <tr>
-          <td style="padding:20px; font-size:14px; line-height:1.6; color:#333333;"><h2 style="font-size:18px; font-weight:bold; color:#BF9730; margin:0 0 10px;">Capital Market Overview</h2>
-            <p> The Nigerian equity market gained a bullish momentum, with NGX ASI of 203,770.43 boasting a market capitalization to N131, 166 Trillion as of April 10, 2026. Meanwhile, a total turnover of 3.361 billion shares worth ₦151.948 billion in 229,442 deals was traded by investors on the floor of the Exchange, in contrast to a total of 2.856 billion shares valued at ₦113.597 billion that exchanged hands last week in 215,287 deals. The Financial Services Industry (measured by volume) led the activity chart with 2.303 billion shares valued at ₦90.467 billion traded in 98,175 deals: thus contributing 68.54% and 59.54% to the total equity turnover volume and value respectively. The Services Industry followed with 264.146 million shares worth ₦1.977 billion in 12,638 deals. Third place was the ICT Industry, with a turnover of 214.578 million shares worth ₦9.791 billion in 28,183. </p></td>
-        </tr>
-        
-        <!-- TOP GAINERS -->
-<tr>
-  <td style="padding:10px;">
-    <h2 style="font-size:18px; color:#002147;">Top Gainers</h2>
-    <table border="1" cellpadding="8" cellspacing="0" width="100%" style="border-collapse:collapse; font-size:13px; text-align:center;">
-      <tr style="background-color:#002147; color:#fff;">
-        <th>Company</th><th>Open</th><th>Close</th><th>Change</th><th>% Change</th>
-      </tr>
-      <tr><td>TRANSEXPR</td><td>3.43</td><td>3.77</td><td>0.34</td><td>+9.91%</td></tr>
-      <tr><td>INTBREW</td><td>12.15</td><td>13.35</td><td>1.20</td><td>+9.88%</td></tr>
-      <tr><td>CHAMS</td><td>3.05</td><td>3.35</td><td>0.30</td><td>+9.84%</td></tr>
-      <tr><td>GUINNESS</td><td>423.20</td><td>462.90</td><td>39.70</td><td>+9.38%</td></tr>
-      <tr><td>WAPCO</td><td>214.90</td><td>233.20</td><td>18.30</td><td>+8.52%</td></tr>
-    </table>
-  </td>
-</tr>
-        
-        <!-- TOP LOSERS -->
-<tr>
-  <td style="padding:10px;">
-    <h2 style="font-size:18px; color:#002147;">Top Losers</h2>
-    <table border="1" cellpadding="8" cellspacing="0" width="100%" style="border-collapse:collapse; font-size:13px; text-align:center;">
-      <tr style="background-color:#002147; color:#fff;">
-        <th>Company</th><th>Open</th><th>Close</th><th>Change</th><th>% Change</th>
-      </tr>
-      <tr><td>OMATEK</td><td>2.30</td><td>2.07</td><td>-0.23</td><td>-10.00%</td></tr>
-      <tr><td>AUSTINLAZ</td><td>4.43</td><td>3.99</td><td>-0.44</td><td>-9.93%</td></tr>
-      <tr><td>WAPIC</td><td>3.24</td><td>2.92</td><td>-0.32</td><td>-9.88%</td></tr>
-      <tr><td>ZICHIS</td><td>13.88</td><td>12.55</td><td>-1.33</td><td>-9.58%</td></tr>
-      <tr><td>CORNERST</td><td>5.70</td><td>5.20</td><td>-0.50</td><td>-8.77%</td></tr>
-    </table>
-  </td>
-</tr>
-      
-		   <tr>
-  <td align="center">
-    <img src="https://res.cloudinary.com/dc6kfrchh/image/upload/v1775563250/probate_page-0001_ig8oey.jpg"
-         alt="Company sec. and probate advert"
-         width="600"
-         style="display:block; width:100%; height:auto; border:0;">
-  </td>
-</tr>
-		 
-<tr>
-  <td align="center" style="background-color:#002147; padding:30px;">
+  <!-- PROJECT -->
+ <div class="card">
+  <h3>📧 Financial Newsletter Template</h3>
+
+  <div class="image-grid">
+    <img src="newsletter-desktop.png" class="project-img">
+    <img src="newsletter-mobile.png" class="project-img">
     
-    <p style="font-size:15px; color:#ffffff; margin-bottom:15px;">
-      Need assistance with probate or company secretarial services?
+  </div>
+
+  <p>
+    A responsive HTML email template designed for financial updates, featuring data tables, CTAs, and cross-client compatibility.
+  </p>
+
+  <a href="newsletter.html" class="button">View Template</a>
+</div>
+
+  <div class="card">
+    <h3>🛍️ Promotional Email (Coming Soon)</h3>
+    <p>High-converting promotional email for marketing campaigns.</p>
+  </div>
+
+  <div class="card">
+    <h3>👋 Welcome Email (Coming Soon)</h3>
+    <p>Clean onboarding email template for new users.</p>
+  </div>
+
+  <!-- CONTACT SECTION -->
+  <div class="contact">
+    <h2>Let’s Work Together</h2>
+    <p>
+      I design responsive HTML email templates that work across all major email clients and drive engagement.
     </p>
 
-    <a href="https://firstregistrarsnigeria.com/services/probate"
-       style="background:#FFD700; color:#002147; padding:12px 22px; text-decoration:none; border-radius:5px; font-size:14px; display:inline-block; font-weight:bold;">
-       Learn More
-    </a>
-
-  </td>
-</tr>
-		 
-		 <!-- MOST TRADED BY VOLUME -->
-<tr>
-  <td style="padding:10px;">
-    <h2 style="font-size:18px; color:#002147;">Most Traded (By Volume)</h2>
-    <table border="1" cellpadding="8" cellspacing="0" width="100%" style="border-collapse:collapse; font-size:13px; text-align:center;">
-      <tr style="background-color:#002147; color:#fff;">
-        <th>Company</th><th>Deals</th><th>Volume</th>
-      </tr>
-      <tr><td>ACCESSCORP</td><td>1,969</td><td>52,704,964</td></tr>
-      <tr><td>ZENITHBANK</td><td>3,679</td><td>47,793,270</td></tr>
-      <tr><td>UBA</td><td>1,495</td><td>38,884,618</td></tr>
-      <tr><td>NSLTECH</td><td>503</td><td>36,691,754</td></tr>
-      <tr><td>GTCO</td><td>3,251</td><td>34,905,768</td></tr>
-    </table>
-  </td>
-</tr>
- 
-        
-        <!-- MOST TRADED BY VALUE -->
-<tr>
-  <td style="padding:10px;">
-    <h2 style="font-size:18px; color:#002147;">Most Traded (By Value)</h2>
-    <table border="1" cellpadding="8" cellspacing="0" width="100%" style="border-collapse:collapse; font-size:13px; text-align:center;">
-      <tr style="background-color:#002147; color:#fff;">
-        <th>Company</th><th>Deals</th><th>Value (₦)</th>
-      </tr>
-      <tr><td>ARADEL</td><td>1,124</td><td>6,491,429,124.50</td></tr>
-      <tr><td>ZENITHBANK</td><td>3,679</td><td>5,344,969,127.55</td></tr>
-      <tr><td>GTCO</td><td>3,251</td><td>4,631,213,729.10</td></tr>
-      <tr><td>MTNN</td><td>3,293</td><td>2,202,997,664.30</td></tr>
-      <tr><td>WAPCO</td><td>1,005</td><td>2,104,765,762.20</td></tr>
-    </table>
-  </td>
-</tr>
-		 
-		 <tr>
-  <td style="padding:10px;">
-    <h2 style="font-size:18px; color:#002147; margin:0 0 10px;">
-      Corporate Announcement
-    </h2>
-
-    <table border="1" cellpadding="8" cellspacing="0" width="100%" 
-      style="border-collapse:collapse; font-size:13px; text-align:center; color:#333;">
-
-      <tr style="background-color:#002147; color:#ffffff;">
-        <th>Company</th>
-        <th>Dividend</th>
-        <th>Bonus</th>
-        <th>Qualification Date</th>
-        <th>Closure Date</th>
-        <th>AGM Date</th>
-        <th>Payment Date</th>
-      </tr>
-
-      <tr><td>Africa Prudential</td><td>₦0.40K</td><td>NIL</td><td>12/03/26</td><td>13/03/26</td><td>02/04/26</td><td>02/04/26</td></tr>
-      <tr><td>Berger Paint</td><td>₦1.25K</td><td>NIL</td><td>23/04/26</td><td>24/04/26</td><td>21/05/26</td><td>21/05/26</td></tr>
-      <tr><td>Bua Foods</td><td>₦28.00</td><td>NIL</td><td>04/06/26</td><td>05/06/26</td><td>15/07/26</td><td>15/07/26</td></tr>
-      <tr><td>Bua Cement</td><td>₦10.00</td><td>NIL</td><td>08/05/26</td><td>11/05/26</td><td>21/05/26</td><td>21/05/26</td></tr>
-      <tr><td>CAP</td><td>₦4.00</td><td>NIL</td><td>03/06/26</td><td>04/06/26</td><td>24/06/26</td><td>25/06/26</td></tr>
-      <tr><td>CHAMS</td><td>₦0.30K</td><td>NIL</td><td>18/06/26</td><td>19/06/26</td><td>09/07/26</td><td>10/07/26</td></tr>
-      <tr><td>CWG</td><td>₦0.70K</td><td>NIL</td><td>07/04/26</td><td>08/04/26</td><td>16/04/26</td><td>17/04/26</td></tr>
-      <tr><td>DAAR</td><td>NIL</td><td>NIL</td><td>NIL</td><td>NIL</td><td>30/04/26</td><td>NIL</td></tr>
-      <tr><td>Dangote Cement</td><td>₦45.00K</td><td>NIL</td><td>17/06/26</td><td>18/06/26</td><td>02/07/26</td><td>02/07/26</td></tr>
-      <tr><td>Geregu</td><td>₦9.00K</td><td>NIL</td><td>13/04/26</td><td>14/04/26</td><td>30/04/26</td><td>30/04/26</td></tr>
-      <tr><td>GTCO</td><td>₦11.76K</td><td>NIL</td><td>13/04/26</td><td>14/04/26</td><td>28/04/26</td><td>28/04/26</td></tr>
-      <tr><td>Lafarge</td><td>₦6.00</td><td>NIL</td><td>03/04/26</td><td>06/04/26</td><td>30/04/26</td><td>30/04/26</td></tr>
-      <tr><td>MTN</td><td>₦15.00</td><td>NIL</td><td>08/04/26</td><td>09/04/26</td><td>30/04/26</td><td>05/05/26</td></tr>
-      <tr><td>NASCON</td><td>₦6.00</td><td>NIL</td><td>01/04/26</td><td>02/04/26</td><td>27/04/26</td><td>28/04/26</td></tr>
-      <tr><td>NAHCO</td><td>₦6.25K</td><td>1 for 7</td><td>01/05/26</td><td>04/05/26</td><td>15/05/26</td><td>15/05/26</td></tr>
-      <tr><td>NGX</td><td>₦2.00K</td><td>1 for 3</td><td>10/04/26</td><td>13/04/26</td><td>29/04/26</td><td>29/04/26</td></tr>
-      <tr><td>Okomu</td><td>₦15.00</td><td>NIL</td><td>27/04/26</td><td>28/04/26</td><td>26/05/26</td><td>26/05/26</td></tr>
-      <tr><td>Unilever</td><td>₦3.25K</td><td>NIL</td><td>10/04/26</td><td>13/04/26</td><td>08/05/26</td><td>08/05/26</td></tr>
-      <tr><td>Zenith</td><td>₦8.75K</td><td>NIL</td><td>24/04/26</td><td>27/04/26</td><td>05/05/26</td><td>05/05/26</td></tr>
-
-    </table>
-  </td>
-</tr>
-		 
-		  <tr>
-  <td align="center">
-    <img src="https://res.cloudinary.com/dc6kfrchh/image/upload/v1775562815/FRISBITS_Newsletter_o6woja.jpg"
-         alt="ONLINE ACCESS advert"
-         width="600"
-         style="display:block; width:100%; height:auto; border:0;">
-  </td>
-</tr>
-
-<tr>
-  <td align="center" style="background-color:#002147; padding:30px;">
-    
-    <p style="font-size:15px; color:#ffffff; margin-bottom:15px;">
-      Access your shareholder account anytime, anywhere.
+    <p>
+      📧 <a href="mailto:bolorunduroomoduni@gmail.com">bolorunduroomoduni@gmail.com</a><br><br>
+      📞 <a href="tel:+2348102796552">+234 810 279 6552</a>
     </p>
 
-    <a href="https://access.firstregistrarsnigeria.com/register"
-       style="background:#FFD700; color:#002147; padding:12px 22px; text-decoration:none; border-radius:5px; font-size:14px; display:inline-block; font-weight:bold;">
-       Get Started Now
-    </a>
-
-  </td>
-</tr>
-        
-        <!-- SECTION 6: Capital -->
-        <tr>
-          <td style="padding:20px; font-size:14px; line-height:1.6; color:#333333;"><h2 style="font-size:18px; font-weight:bold; color:#BF9730; margin:0 0 10px;"> Market Development </h2>
-            <p> The securities of DN Tyre and Rubber Plc (DN Tyre or the Company) and Greif Nigeria Plc (Greif or the Company) have been delisted from the facilities of Nigerian Exchange Limited (NGX) effective Thursday, 9 April 2026, on the grounds that the Companies are operating below the listing standards of NGX and their securities are no longer considered suitable for continued listing and trading in the market. </p></td>
-        </tr>
-		 
-   
-		 
-		 
-        
-          <!-- WEEKLY PERFORMANCE SNAPSHOT -->
-<tr>
-  <td style="padding:10px;">
-    <h2 style="font-size:18px; color:#002147;">Weekly Performance Snapshot</h2>
-    <table border="1" cellpadding="8" cellspacing="0" width="100%" style="border-collapse:collapse; font-size:13px; text-align:center;">
-      <tr style="background-color:#002147; color:#fff;">
-        <th>Indicator</th><th>Opening</th><th>Closing</th><th>Change</th>
-      </tr>
-      <tr><td>NGX ASI</td><td>201,698.89</td><td>203,770.43</td><td>+1.03%</td></tr>
-      <tr><td>Market Cap</td><td>₦129.806T</td><td>₦131.166T</td><td>+1.05%</td></tr>
-    </table>
-  </td>
-</tr>
-        
-        <!-- OUTLOOK -->
-<tr>
-  <td style="padding:10px;">
-    <h2 style="font-size:18px; color:#002147;">Outlook</h2>
-    <p style="font-size:13px; color:#333;">
-      The market is expected to sustain its positive bias as investors continue positioning in fundamentally sound stocks, 
-      although intermittent profit-taking may limit gains.
+    <p>
+      Available for freelance & remote opportunities
     </p>
-  </td>
-</tr>
+  </div>
 
-        
-<!--
-        <tr>
-          <td style="padding:20px; font-size:14px; line-height:1.6; color:#333333;"><h2 style="font-size:18px; color:#BF9730; margin:0 0 10px; font-weight:bold;">More text</h2>
-            <p> Nigeria’s apex capital market regulator, Securities and Exchange Commission (SEC) is set to launch a new identification device that will allow investors to determine whether any firm or individual is statutorily empowered to offer investment products and services.
-              
-              The dedicated Unstructured Supplementary Service Data (USSD) code system does not require internet service. It works seamlessly with all mobile phones. The USSD initiative is aimed at making verification processes more accessible, particularly for Nigerians in areas with limited internet access. </p></td>
-        </tr>
--->
-     <tr>
-  <td align="center">
-    <img src="https://res.cloudinary.com/dc6kfrchh/image/upload/v1775563763/FRISBITS_Newsletter_1_v2nivn.jpg"
-         alt="SMS UPDATE advert"
-         width="600"
-         style="display:block; width:100%; height:auto; border:0;">
-  </td>
-</tr>
+</div>
 
-<tr>
-  <td align="center" style="background-color:#1C4573; padding:30px;">
-    
-    <p style="font-size:15px; color:#ffffff; margin-bottom:15px;">
-      Stay informed with real-time updates on your investments via SMS.
-    </p>
+<!-- FOOTER -->
+<div class="footer">
+  © 2026 Omoduni Bolorunduro Mark
+</div>
 
-    <a href="https://access.firstregistrarsnigeria.com/login"
-       style="background:#FFD700; color:#002147; padding:12px 22px; text-decoration:none; border-radius:5px; font-size:14px; display:inline-block; font-weight:bold;">
-       Subscribe to SMS Alerts
-    </a>
-
-  </td>
-</tr>
-        
-        <!-- SECTION 8: Disclaimer -->
-        <tr>
-          <td style="
-    padding:20px;
-    font-size:12px;
-    line-height:1.6;
-    color:#555555;
-    background:#f9f9f9;
-    border-top:3px solid #002147; /* Deep blue accent line */
-    font-family:Arial, sans-serif;
-  "><strong style="color:#002147; font-style:italic; font-size:13px;">Disclaimer:</strong><br>
-            <em> The information contained in this report is believed to be accurate at the time of publication. 
-            No liability is accepted for errors or omissions of fact, nor is any warranty given for the accuracy or completeness of the information. 
-            Neither First Registrars &amp;
-            Investor Services Limited’s Management, directors nor employees will be liable for losses or opportunity costs, 
-            whether direct or consequential, that may arise from actions taken based on this report. </em></td>
-        </tr>
-		 
-		<!-- APP DOWNLOAD SECTION START -->
-
-<!-- CLICKABLE BANNER -->
-<tr>
-  <td align="center" style="padding:0;">
-    <a href="https://play.google.com/store/apps/details?id=com.itech.frismobile&utm_source=email&utm_medium=newsletter&utm_campaign=fris_app" target="_blank">
-      <img src="https://res.cloudinary.com/dc6kfrchh/image/upload/v1775565838/FRIS_Mobile_App__Now_on_Google_Play_u62hdx.png"
-           alt="Download FRIS Mobile App"
-           width="600"
-           style="display:block; width:100%; max-width:600px; height:auto; border:0;">
-    </a>
-  </td>
-</tr>
-
-<!-- SPACING -->
-<tr>
-  <td height="10" style="font-size:0; line-height:0;">&nbsp;</td>
-</tr>
-
-<!-- GOOGLE PLAY BUTTON -->
-<tr>
-  <td align="center" style="padding:10px;">
-    <table border="0" cellpadding="0" cellspacing="0" align="center">
-      <tr>
-        <td align="center" style="padding:5px;">
-          <a href="https://play.google.com/store/apps/details?id=com.itech.frismobile&utm_source=email&utm_medium=newsletter&utm_campaign=fris_app" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
-                 alt="Get it on Google Play"
-                 width="180"
-                 style="display:block; border:0;">
-          </a>
-        </td>
-      </tr>
-    </table>
-  </td>
-</tr>
-
-<!-- FALLBACK TEXT CTA (FOR IMAGES OFF) -->
-<tr>
-  <td align="center" style="padding:10px;">
-    <a href="https://play.google.com/store/apps/details?id=com.itech.frismobile"
-       style="font-size:13px; font-family:Arial, sans-serif; color:#002147; text-decoration:underline;">
-      
-    </a>
-  </td>
-</tr>
-
-<!-- APP DOWNLOAD SECTION END -->
-		 
-		 
-		 
-		 
-<!--
-        <tr>
-          <td align="center"><img src="https://res.cloudinary.com/dc6kfrchh/image/upload/v1775565838/FRIS_Mobile_App__Now_on_Google_Play_u62hdx.png"
-         alt="FRIS MOBILE  advert"
-         width="600"
-         style="display:block; width:100%; height:auto; border:0;"></td>
-        </tr>
--->
-        
-        <!-- SECTION 9: Quick Links -->
-     
-        
-        <!-- Footer -->
-          <tr>
-  <td bgcolor="#002147" align="center" style="padding:20px; color:#ffffff; font-size:12px; line-height:1.5;">
-
-
-<!-- DO NOT REPLY Notice -->
-<p style="margin:0 0 10px 0; font-weight:bold;">DO NOT REPLY TO THIS EMAIL.</p>
-<p style="margin:0 0 15px 0;">
-  For enquiries, please contact us via email or phone:
-</p>
-
-<!-- Main Contact Info -->
-<a href="mailto:info@firstregistrarsnigeria.com"
-   style="color:#ffffff; text-decoration:none; font-weight:bold;">
-   ✉️ info@firstregistrarsnigeria.com
-</a> | 
-<a href="tel:+2349154123719"
-   style="color:#ffffff; text-decoration:none; font-weight:bold;">
-   📞 +234 915 412 3719
-</a>
-
-<br><br>
-
-<!-- Social Icons -->
-<table border="0" cellpadding="0" cellspacing="0" align="center">
-  <tr>
-    <td align="center" style="padding:0 5px;">
-      <a href="https://www.facebook.com/share/14JDyFVJGzm/">
-        <img src="https://res.cloudinary.com/dc6kfrchh/image/upload/v1765447951/facebook_u7ejvv.jpg" width="24" height="24" style="display:block; border:0;">
-      </a>
-    </td>
-    <td align="center" style="padding:0 5px;">
-      <a href="https://www.linkedin.com/company/first-registrars-nigeria-limited/">
-        <img src="https://res.cloudinary.com/dc6kfrchh/image/upload/v1765449595/linkin_alev6n.png" width="24" height="24" style="display:block; border:0;">
-      </a>
-    </td>
-    <td align="center" style="padding:0 5px;">
-      <a href="https://www.instagram.com/firstregistrars">
-        <img src="https://res.cloudinary.com/dc6kfrchh/image/upload/v1765449595/insta_z2pcgm.jpg" width="24" height="24" style="display:block; border:0;">
-      </a>
-    </td>
-    <td align="center" style="padding:0 5px;">
-      <a href="https://youtube.com/@firstregistrars7525">
-        <img src="https://res.cloudinary.com/dc6kfrchh/image/upload/v1765449595/youtube_ais55n.png" width="24" height="24" style="display:block; border:0;">
-      </a>
-    </td>
-  </tr>
-</table>
-
-<br><br>
-
-You are receiving this email because you are a shareholder or subscribed to updates from First Registrars &amp; Investor Services Ltd.
-
-<br><br>
-    
-    <p style="font-size:12px; color:#ffffff; text-align:center; margin:0; line-height:1.6;">
- If you no longer wish to receive these emails,
-  <br>
-  <a href="https://forms.cloud.microsoft/r/TqpUiGAY6U" 
-     style="color:#C9A227; text-decoration:underline; font-weight:bold;">
-    Unsubscribe here
-  </a>
-</p>
-
-
-
-<br><br>
-    <a href="https://www.firstregistrarsnigeria.com"
-style="display:inline-block; background-color:#ffffff; color:#002147; 
-text-decoration:none; font-weight:bold; padding:8px 14px; 
-border-radius:4px;">
-
-<img src="https://res.cloudinary.com/dc6kfrchh/image/upload/v1773498320/first_registrars_logo_mn7bsu.png"
-alt="First Registrars Logo"
-width="60"
-height="20"
-style="vertical-align:middle; margin-right:6px; border:0;">
-
-Click here to visit our website
-</a>
-<br><br>
-
-<!-- Divider -->
-<hr style="border:none; border-top:1px solid #6c8bb3; width:80%; margin:20px auto;">
-
-<!-- Company Address -->
-First Registrars &amp; Investor Services Limited<br>
-Plot 2, Abebe Village Road, Iganmu, Lagos, Nigeria
-
-<br><br>
-
-<!-- Regulatory Statement -->
-FIRST REGISTRARS &amp; INVESTOR SERVICES LIMITED IS DULY REGISTERED AND REGULATED BY THE SECURITIES &amp; EXCHANGE COMMISSION, NIGERIA.
-
-<br><br>
-
-© 2026 First Registrars &amp; Investor Services Ltd. All Rights Reserved.
-
-
-  </td>
-</tr>
-
-      </table></td>
-  </tr>
-</table>
 </body>
 </html>
