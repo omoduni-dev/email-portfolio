@@ -45,6 +45,12 @@ body{
   padding:20px;
 }
 
+.cta-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
 /* CARD */
 .card{
   background:#ffffff;
