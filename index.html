@@ -4,127 +4,198 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Email Portfolio</title>
-    <link rel="stylesheet" href="styles/styles.css">
+<link rel="stylesheet" href="styles/styles.css">
 </head>
-  
-  
-  <body>
+
+<body>
 
 <!-- HEADER -->
 <div class="header">
-  <h1>Omoduni Bolorunduro Mark</h1>
-  <p>HTML Email Developer | Responsive Email Templates | Email Marketing Specialist</p>
-	<p class="header-subtext">
-I build high-performing email templates that work across Gmail, Outlook, Apple Mail and mobile devices.
-</p>
-
+  <div class="container">
+    <h1>Omoduni Bolorunduro Mark</h1>
+    <p>HTML Email Developer | Responsive Email Templates | Email Marketing Specialist</p>
+    <p class="header-subtext">
+      I build high-performing email templates that work across Gmail, Outlook, Apple Mail and mobile devices.
+    </p>
+  </div>
 </div>
 
+<!-- CTA -->
 <div class="cta-container">
-  <a href="#projects" class="button">View My Work</a>
+  <div class="container">
+    <a href="#projects" class="button">View My Work</a>
+  </div>
 </div>
 
+<!-- SERVICES -->
 <section class="services">
-  <h2>Services</h2>
+  <div class="container">
+    <h2>Services</h2>
 
-  <ul>
-    <li>📧 Email Template Development</li>
-    <li>⚡ Email Deliverability Audit</li>
-    <li>🔐 DNS Authentication Setup (SPF, DKIM, DMARC)</li>
-    <li>🔥 Domain Warm-up Strategy</li>
-    <li>📊 I optimize email layout, CTA placement, and structure to improve engagement and conversion across email campaigns.</li>
-    <li>🛡 Spam Score Testing</li>
-    <li>🖨 HTML to PDF/Image Rendering (conversion, optimization, and layout fixes)</li>
-  </ul>
+    <div class="why-grid">
+
+      <div class="why-item">
+        <h3>📧 Email Templates</h3>
+        <p>Responsive HTML email templates that work across Gmail, Outlook, and mobile devices.</p>
+      </div>
+
+      <div class="why-item">
+        <h3>⚡ Deliverability Audit</h3>
+        <p>Improve inbox placement with optimized email structure and spam checks.</p>
+      </div>
+
+      <div class="why-item">
+        <h3>🔐 DNS Setup</h3>
+        <p>SPF, DKIM, and DMARC configuration for secure and trusted email sending.</p>
+      </div>
+
+      <div class="why-item">
+        <h3>🔥 Domain Warm-up</h3>
+        <p>Gradual sending strategies to build sender reputation and avoid spam filters.</p>
+      </div>
+
+      <div class="why-item">
+        <h3>📊 Campaign Optimization</h3>
+        <p>Improving layout, CTA placement, and structure to boost engagement and conversions.</p>
+      </div>
+
+      <div class="why-item">
+        <h3>🛡 Spam Testing</h3>
+        <p>Identify and fix spam triggers to improve deliverability.</p>
+      </div>
+
+      <div class="why-item">
+        <h3>🖨 HTML to PDF/Image</h3>
+        <p>Convert HTML designs to high-quality PDF or images with layout fixes.</p>
+      </div>
+
+    </div>
+  </div>
 </section>
 
+<!-- TECHNICAL EXPERTISE -->
 <section class="services">
-  <h2>Technical Expertise</h2>
+  <div class="container">
+    <h2>Technical Expertise</h2>
 
-  <ul>
-    <li>📧 Cross-client email development (Gmail, Outlook, Apple Mail)</li>
-    <li>🛠 Outlook compatibility (VML buttons, MSO conditionals)</li>
-    <li>📱 Responsive email design (mobile-first approach)</li>
-    <li>🧪 Manual testing (Gmail, Outlook, mobile)</li>
-    <li>🧠 Outlook simulation using Word rendering</li>
-    <li>🛡 Deliverability optimization (SPF, DKIM, spam score)</li>
-    <li>⚙ HTML & Inline CSS</li>
-    <li>🔗 API familiarity (Resend, Mailgun, Postmark)</li>
-  </ul>
+    <div class="why-grid">
+
+      <div class="why-item">
+        <h3>📧 Cross-Client Emails</h3>
+        <p>Compatible with Gmail, Outlook, Apple Mail, and mobile devices.</p>
+      </div>
+
+      <div class="why-item">
+        <h3>🛠 Outlook Compatibility</h3>
+        <p>VML buttons, MSO conditionals, and Outlook rendering fixes.</p>
+      </div>
+
+      <div class="why-item">
+        <h3>📱 Responsive Design</h3>
+        <p>Mobile-first layouts optimized for all screen sizes.</p>
+      </div>
+
+      <div class="why-item">
+        <h3>🧪 Email Testing</h3>
+        <p>Manual testing across Gmail, Outlook, and mobile devices.</p>
+      </div>
+
+      <div class="why-item">
+        <h3>🧠 Outlook Simulation</h3>
+        <p>Testing using Word-based rendering behavior.</p>
+      </div>
+
+      <div class="why-item">
+        <h3>🛡 Deliverability</h3>
+        <p>SPF, DKIM, and spam score optimization.</p>
+      </div>
+
+      <div class="why-item">
+        <h3>⚙ Clean HTML</h3>
+        <p>Table-based structure with inline CSS for reliability.</p>
+      </div>
+
+      <div class="why-item">
+        <h3>🔗 API Integration</h3>
+        <p>Ready for Resend, Mailgun, and Postmark workflows.</p>
+      </div>
+
+    </div>
+  </div>
 </section>
 
-<!-- MAIN -->
+<!-- PROJECTS -->
 <div class="container">
 
   <h2 id="projects">My Projects</h2>
 
-  <!-- PROJECT -->
- <div class="card">
-  <h3>📧 Financial Newsletter Template</h3>
-
-  <div class="image-grid">
-  <img src="images/newsletter-desktop.png" class="project-img" alt="Newsletter desktop preview" onclick="openLightbox(this.src)">
-  <img src="images/newsletter-mobile.png" class="project-img" alt="Newsletter mobile preview" onclick="openLightbox(this.src)">
-</div>
-
-  
-    <p>
-A responsive HTML email template built for financial updates, featuring structured data tables, cross-client compatibility, and optimized layout for Gmail, Outlook, and mobile devices.
-</p>
- 
-
-  <a href="templates/newsletter.html" class="button">View Template</a>
-</div>
-
   <div class="card">
-    <h3>🛍️ Promotional Email </h3>
+    <h3>📧 Financial Newsletter Template</h3>
+
     <div class="image-grid">
-  <img src="images/promo-email-desktop.png" class="project-img" alt="Promotional email desktop preview" onclick="openLightbox(this.src)">
-  <img src="images/promo-email-mobile.png" class="project-img" alt="Promotional email mobile preview" onclick="openLightbox(this.src)">
-</div>
-    <p>
-A responsive promotional email built with table-based HTML, optimized for cross-client compatibility across Gmail, Outlook, and mobile devices. Includes VML-based buttons for Outlook support and tested for consistent rendering and deliverability.
-</p>
-   
-   <a href="templates/promo-email.html" class="button">View Template</a>
-  </div>
+      <img src="images/newsletter-desktop.png" class="project-img" onclick="openLightbox(this.src)">
+      <img src="images/newsletter-mobile.png" class="project-img" onclick="openLightbox(this.src)">
+    </div>
 
- <div class="card">
-    <h3>👋 Welcome Email Template</h3>
-  <div class="image-grid">
-  <img src="images/welcome-desktop.png" class="project-img" alt="Welcome email desktop preview" onclick="openLightbox(this.src)">
-  <img src="images/welcome-mobile.png" class="project-img" alt="Welcome email mobile preview" onclick="openLightbox(this.src)">
-</div>
-    <p>A responsive welcome email designed for user onboarding, optimized for engagement and consistent rendering across Gmail, Outlook, and mobile devices.</p>
-   
-   <a href="templates/welcome-email.html" class="button">View Template</a>
+    <p>
+      A responsive HTML email template built for financial updates, featuring structured data tables, cross-client compatibility, and optimized layout.
+    </p>
+
+    <a href="templates/newsletter.html" class="button">View Template</a>
   </div>
 
   <div class="card">
-  <h3>⚙️ Email API Simulation Demo</h3>
+    <h3>🛍️ Promotional Email</h3>
 
-  <p>
-    A demo showing how HTML email templates integrate with APIs using dynamic variables like {{name}} and CTA links. Simulates real-world email personalization workflows.
-  </p>
+    <div class="image-grid">
+      <img src="images/promo-email-desktop.png" class="project-img" onclick="openLightbox(this.src)">
+      <img src="images/promo-email-mobile.png" class="project-img" onclick="openLightbox(this.src)">
+    </div>
 
-  <a href="api-demo.html" class="button">View Demo</a>
-</div>
+    <p>
+      Promotional email optimized for Gmail, Outlook, and mobile with VML buttons and consistent rendering.
+    </p>
 
-  <!-- CONTACT SECTION -->
+    <a href="templates/promo-email.html" class="button">View Template</a>
+  </div>
+
+  <div class="card">
+    <h3>👋 Welcome Email Template</h3>
+
+    <div class="image-grid">
+      <img src="images/welcome-desktop.png" class="project-img" onclick="openLightbox(this.src)">
+      <img src="images/welcome-mobile.png" class="project-img" onclick="openLightbox(this.src)">
+    </div>
+
+    <p>
+      A responsive onboarding email optimized for engagement across all major clients.
+    </p>
+
+    <a href="templates/welcome-email.html" class="button">View Template</a>
+  </div>
+
+  <div class="card">
+    <h3>⚙️ Email API Simulation Demo</h3>
+
+    <p>
+      Demonstrates dynamic email personalization using APIs and variables like {{name}}.
+    </p>
+
+    <a href="api-demo.html" class="button">View Demo</a>
+  </div>
+
+  <!-- CONTACT -->
   <div class="contact">
     <h2>Let’s Work Together</h2>
-    <p>
-      I design responsive HTML email templates that work across all major email clients and drive engagement.
-    </p>
+
+    <p>I design responsive email templates that drive engagement.</p>
 
     <p>
       📧 <a href="mailto:bolorunduroomoduni@gmail.com">bolorunduroomoduni@gmail.com</a><br><br>
       📞 <a href="tel:+2348102796552">+234 810 279 6552</a>
     </p>
 
-    <p>
-      Available for freelance & remote opportunities
-    </p>
+    <p>Available for freelance & remote opportunities</p>
   </div>
 
 </div>
@@ -133,17 +204,13 @@ A responsive promotional email built with table-based HTML, optimized for cross-
 <div class="footer">
   © 2026 Omoduni Bolorunduro Mark
 </div>
-    
-    
-      <!-- LIGHTBOX -->
+
+<!-- LIGHTBOX -->
 <div id="lightbox" onclick="closeLightbox()">
-
-  <img id="lightbox-img" alt="Expanded preview">
-
+  <img id="lightbox-img">
 </div>
-    
-    <script src="scripts/script.js"></script>
-  
+
+<script src="scripts/script.js"></script>
 
 </body>
 </html>
