@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Email Portfolio</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+  
+  
+  <body>
+
+<!-- HEADER -->
+<div class="header">
+  <h1>Omoduni Bolorunduro Mark</h1>
+  <p>HTML Email Developer | Responsive Email Templates | Email Marketing Specialist</p>
+	<p class="header-subtext">
+I build high-performing email templates that work across Gmail, Outlook, Apple Mail and mobile devices.
+</p>
+
+</div>
+<div style="margin-top:15px;">
+  <a href="#projects" class="button">View My Work</a>
+</div>
+
+<section class="services">
+  <h2>Services</h2>
+
+  <ul>
+    <li>📧 Email Template Development</li>
+    <li>⚡ Email Deliverability Audit</li>
+    <li>🔐 DNS Authentication Setup (SPF, DKIM, DMARC)</li>
+    <li>🔥 Domain Warm-up Strategy</li>
+    <li>📊 I optimize email layout, CTA placement, and structure to improve engagement and conversion across email campaigns.</li>
+    <li>🛡 Spam Score Testing</li>
+    <li>🖨 HTML to PDF/Image Rendering (conversion, optimization, and layout fixes)</li>
+  </ul>
+</section>
+
+<section class="services">
+  <h2>Technical Expertise</h2>
+
+  <ul>
+    <li>📧 Cross-client email development (Gmail, Outlook, Apple Mail)</li>
+    <li>🛠 Outlook compatibility (VML buttons, MSO conditionals)</li>
+    <li>📱 Responsive email design (mobile-first approach)</li>
+    <li>🧪 Manual testing (Gmail, Outlook, mobile)</li>
+    <li>🧠 Outlook simulation using Word rendering</li>
+    <li>🛡 Deliverability optimization (SPF, DKIM, spam score)</li>
+    <li>⚙ HTML & Inline CSS</li>
+    <li>🔗 API familiarity (Resend, Mailgun, Postmark)</li>
+  </ul>
+</section>
+
+<!-- MAIN -->
+<div class="container">
+
+  <h2 id="projects">My Projects</h2>
+
+  <!-- PROJECT -->
+ <div class="card">
+  <h3>📧 Financial Newsletter Template</h3>
+
+  <div class="image-grid">
+  <img src="images/newsletter-desktop.png" class="project-img" alt="Newsletter desktop preview" onclick="openLightbox(this.src)">
+  <img src="images/newsletter-mobile.png" class="project-img" alt="Newsletter mobile preview" onclick="openLightbox(this.src)">
+</div>
+
+  
+    <p>
+A responsive HTML email template built for financial updates, featuring structured data tables, cross-client compatibility, and optimized layout for Gmail, Outlook, and mobile devices.
+</p>
+ 
+
+  <a href="templates/newsletter.html" class="button">View Template</a>
+</div>
+
+  <div class="card">
+    <h3>🛍️ Promotional Email </h3>
+    <div class="image-grid">
+  <img src="images/promo-email-desktop.png" class="project-img" alt="Promotional email desktop preview" onclick="openLightbox(this.src)">
+  <img src="images/promo-email-mobile.png" class="project-img" alt="Promotional email mobile preview" onclick="openLightbox(this.src)">
+</div>
+    <p>
+A responsive promotional email built with table-based HTML, optimized for cross-client compatibility across Gmail, Outlook, and mobile devices. Includes VML-based buttons for Outlook support and tested for consistent rendering and deliverability.
+</p>
+   
+   <a href="templates/promo-email.html" class="button">View Template</a>
+  </div>
+
+ <div class="card">
+    <h3>👋 Welcome Email Template</h3>
+  <div class="image-grid">
+  <img src="images/welcome-desktop.png" class="project-img" alt="Welcome email desktop preview" onclick="openLightbox(this.src)">
+  <img src="images/welcome-mobile.png" class="project-img" alt="Welcome email mobile preview" onclick="openLightbox(this.src)">
+</div>
+    <p>A responsive welcome email designed for user onboarding, optimized for engagement and consistent rendering across Gmail, Outlook, and mobile devices.</p>
+   
+   <a href="templates/welcome-email.html" class="button">View Template</a>
+  </div>
+
+  <div class="card">
+  <h3>⚙️ Email API Simulation Demo</h3>
+
+  <p>
+    A demo showing how HTML email templates integrate with APIs using dynamic variables like {{name}} and CTA links. Simulates real-world email personalization workflows.
+  </p>
+
+  <a href="api-demo.html" class="button">View Demo</a>
+</div>
+
+  <!-- CONTACT SECTION -->
+  <div class="contact">
+    <h2>Let’s Work Together</h2>
+    <p>
+      I design responsive HTML email templates that work across all major email clients and drive engagement.
+    </p>
+
+    <p>
+      📧 <a href="mailto:bolorunduroomoduni@gmail.com">bolorunduroomoduni@gmail.com</a><br><br>
+      📞 <a href="tel:+2348102796552">+234 810 279 6552</a>
+    </p>
+
+    <p>
+      Available for freelance & remote opportunities
+    </p>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  © 2026 Omoduni Bolorunduro Mark
+</div>
+    
+    
+      <!-- LIGHTBOX -->
+<div id="lightbox" onclick="closeLightbox()">
+
+  <img id="lightbox-img" alt="Expanded preview">
+
+</div>
+    
+    <script src="scripts/script.js"></script>
+  
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Email API Demo</title>
+  <style>
+    body { font-family: Arial; padding:20px; }
+    input, button { padding:10px; margin-top:10px; }
+    .preview {
+      margin-top:20px;
+      border:1px solid #ccc;
+      padding:20px;
+      max-width:500px;
+    }
+  </style>
+</head>
+
+<body>
+
+<h2>Email API Simulation Demo</h2>
+
+<p>Enter a name to simulate dynamic email rendering:</p>
+
+<input type="text" id="nameInput" placeholder="Enter name">
+<br>
+<button onclick="generateEmail()">Generate Email</button>
+
+<div class="preview" id="previewBox">
+  <p>Email preview will appear here...</p>
+</div>
+<p style="font-size:13px; color:#555;">
+This simulates how email APIs like Resend or Mailgun inject dynamic content before sending emails.
+</p>
+
+<script>
+function generateEmail() {
+  const name = document.getElementById("nameInput").value || "User";
+
+  let template = `
+    <h3>Hello {{name}},</h3>
+    <p>Welcome to our platform.</p>
+    <a href="#" style="background:#FF3D00;color:#fff;padding:10px 20px;text-decoration:none;">
+      Get Started
+    </a>
+    <p><a href="#">Unsubscribe</a></p>
+  `;
+
+  template = template.replace("{{name}}", name);
+
+  document.getElementById("previewBox").innerHTML = template;
+}
+</script>
+
+</body>
+</html>
